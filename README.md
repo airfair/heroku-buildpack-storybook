@@ -10,11 +10,11 @@ The main case is adding those buildpack to heroku dyno settings part :
 
 ## Settings
 
-A `storybook:build` script should be present in your package.json and should output the build in a `storybook-static/` folder.
+A `storybook:build` script should be present in your package.json and should output the build in a `docs-build/` folder.
 
 package.json
 ```json
-    "storybook:build": "build-storybook -s storybook-static/"
+    "storybook:build": "build-storybook -o docs-build -s public"
 ```
 
 ## Disclaimer
